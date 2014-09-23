@@ -1,0 +1,27 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "A personal site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browserify": "latest",
+    "jquery": "^1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaughankg/personal.git"
+  },
+  "author": "Vaughan Kelly Guy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaughankg/personal/issues"
+  },
+  "homepage": "https://github.com/vaughankg/personal",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0"
+  }
+}

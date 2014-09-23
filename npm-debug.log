@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git:github.com/vaughankg/critter-box.git' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.22
+4 warn package.json personal@1.0.0 No README data
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'git:github.com/vaughankg/critter-box.git', null ]
+7 verbose cache add spec="git:github.com/vaughankg/critter-box.git" args=["git:github.com/vaughankg/critter-box.git",null]
+8 verbose parsed spec { raw: 'git:github.com/vaughankg/critter-box.git',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: null,
+8 verbose parsed spec   rawSpec: 'git:github.com/vaughankg/critter-box.git',
+8 verbose parsed spec   spec: 'git:github.com/vaughankg/critter-box.git',
+8 verbose parsed spec   type: 'git' }
+9 verbose parsed spec { raw: 'git:github.com/vaughankg/critter-box.git',
+9 verbose parsed spec   scope: null,
+9 verbose parsed spec   name: null,
+9 verbose parsed spec   rawSpec: 'git:github.com/vaughankg/critter-box.git',
+9 verbose parsed spec   spec: 'git:github.com/vaughankg/critter-box.git',
+9 verbose parsed spec   type: 'git' }
+10 verbose addRemoteGit u="git:github.com/vaughankg/critter-box.git" silent=false
+11 silly addRemoteGit parsed { protocol: 'git:',
+11 silly addRemoteGit   slashes: null,
+11 silly addRemoteGit   auth: null,
+11 silly addRemoteGit   host: 'github.com',
+11 silly addRemoteGit   port: null,
+11 silly addRemoteGit   hostname: 'github.com',
+11 silly addRemoteGit   hash: null,
+11 silly addRemoteGit   search: '',
+11 silly addRemoteGit   query: {},
+11 silly addRemoteGit   pathname: '/vaughankg/critter-box.git',
+11 silly addRemoteGit   path: '/vaughankg/critter-box.git',
+11 silly addRemoteGit   href: 'git:github.com/vaughankg/critter-box.git' }
+12 silly lockFile 9fce5174-ub-com-vaughankg-critter-box-git git:github.com/vaughankg/critter-box.git
+13 verbose lock git:github.com/vaughankg/critter-box.git /Users/vaughan/.npm/9fce5174-ub-com-vaughankg-critter-box-git.lock
+14 verbose addRemoteGit [ 'git:github.com/vaughankg/critter-box.git', 'master' ]
+15 error git clone git:github.com/vaughankg/critter-box.git Cloning into bare repository '/Users/vaughan/.npm/_git-remotes/git-github-com-vaughankg-critter-box-git-9fce5174'...
+15 error git clone git:github.com/vaughankg/critter-box.git
+15 error git clone git:github.com/vaughankg/critter-box.git ssh: Could not resolve hostname git: nodename nor servname provided, or not known
+15 error git clone git:github.com/vaughankg/critter-box.git fatal: Could not read from remote repository.
+15 error git clone git:github.com/vaughankg/critter-box.git
+15 error git clone git:github.com/vaughankg/critter-box.git Please make sure you have the correct access rights
+15 error git clone git:github.com/vaughankg/critter-box.git and the repository exists.
+16 silly lockFile 9fce5174-ub-com-vaughankg-critter-box-git git:github.com/vaughankg/critter-box.git
+17 silly lockFile 9fce5174-ub-com-vaughankg-critter-box-git git:github.com/vaughankg/critter-box.git
+18 verbose stack Error: Command failed: ssh: Could not resolve hostname git: nodename nor servname provided, or not known
+18 verbose stack fatal: Could not read from remote repository.
+18 verbose stack
+18 verbose stack Please make sure you have the correct access rights
+18 verbose stack and the repository exists.
+18 verbose stack
+18 verbose stack     at ChildProcess.exithandler (child_process.js:637:15)
+18 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
+18 verbose stack     at maybeClose (child_process.js:735:16)
+18 verbose stack     at Socket.<anonymous> (child_process.js:948:11)
+18 verbose stack     at Socket.EventEmitter.emit (events.js:95:17)
+18 verbose stack     at Pipe.close (net.js:466:12)
+19 verbose cwd /Users/vaughan/projects/personal
+20 error Darwin 13.4.0
+21 error argv "node" "/usr/local/bin/npm" "install" "git:github.com/vaughankg/critter-box.git"
+22 error node v0.10.22
+23 error npm  v2.0.2
+24 error code 128
+25 error Command failed: ssh: Could not resolve hostname git: nodename nor servname provided, or not known
+25 error fatal: Could not read from remote repository.
+25 error
+25 error Please make sure you have the correct access rights
+25 error and the repository exists.
+26 error If you need help, you may report this error at:
+26 error     <http://github.com/npm/npm/issues>
+27 verbose exit [ 1, true ]

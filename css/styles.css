@@ -1,0 +1,268 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
+
+* { padding: 0; margin: 0; }
+
+html { min-width: 1200px; }
+
+body {
+        color: white;
+        font-family: 'Source Code Pro', Helvetica, sans-serif;
+        font-weight: 300;
+        line-height: 1.4;
+        overflow-y: scroll;
+
+}
+
+canvas#background-canvas{
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  position: fixed;
+  background-attachment: scroll;
+}
+
+
+header {
+        width: 38em;
+        margin: 0 auto;
+        font-size: 1.2em;
+}
+
+h1 {
+        font-size: 3em;
+        text-align:center;
+        font-weight: 200;
+        padding: 10px 0;
+        background: rgba(0,0,0,0.8);
+}
+
+h4 { margin: 5px 0; }
+
+img { clear: both; margin: 10px 15px 10px 0px; }
+
+a { text-decoration: underline; color: #222; }
+
+a:hover { color: rgb(75,75,75); }
+
+p { text-align: left; padding: 5px 0; }
+
+li { list-style: none; }
+
+blockquote { margin: 10px 20px; font-size: 1.2em; }
+
+/* utility classes */
+
+.invisible { visibility: hidden; }
+
+.hidden { display: none !important; }
+
+.f-left { float: left; }
+
+.f-right { float: right; }
+
+/* page specifics */
+
+#intro{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: top 500ms;
+  transition: top 500ms;
+  top: 30%;
+}
+
+#introone{
+  display: inline-block;
+  font-size: 3em;
+  padding: 10px;
+  font-weight: 200;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+#navtwo{
+  position: fixed;
+  left: 0;
+  /*font-size: 2em;
+  font-weight: 200;
+  */
+  width: 200px;
+}
+
+/*#intro {
+        position: relative;
+        top: 200px;
+        -webkit-transition: top 500ms;
+  transition: top 500ms;
+        font-size: 3em;
+        font-weight: 200;
+        padding: 10px 0;
+        background: rgba(0,0,0,0.8);
+        text-align: center;
+}
+*/
+
+#buffer{
+  width:100%;
+  height:100px;
+}
+
+#intro.at-top {
+        top: 0px;
+        /*position: relative;*/
+}
+
+
+#textbox  h3 {
+        clear: both;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 0.8em;
+}
+
+.content-box {
+        width: 60%;
+        padding: 30px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background: rgba(242,242,242,0.85);
+        margin: 25px auto;
+        font-size: 1.2em;
+        font-weight: 400;
+  box-sizing: border-box;
+  color: #222;
+}
+
+.content-box {
+        clear: none;
+}
+
+
+#nav a:hover {
+        color: #fff;
+}
+
+.nav-button {
+        list-style: none;
+        background: rgb(100, 100, 100);
+        font-weight: 200;
+        width: 110px;
+        width: 200px;
+        text-align: center;
+        font-size: 1.5em;
+        font-size: 2em;
+        padding: 15px 10px;
+        display: inline-block;
+        margin:5px 0;
+        text-decoration: none;
+        color: #fff;
+        background: rgba(0,0,0,0.8);
+}
+
+.nav-button > a {
+        text-decoration: none;
+        color: #fff;
+}
+
+.nav-button:hover, .nav-buttin > a:hover {
+        background-color: rgb(75, 75, 75);
+        font-weight: 200;
+        cursor: pointer;
+}
+
+.nav-button.selected {
+        background: rgb(50,50,50);
+}
+
+#me-pic{
+        width: 200px;
+}
+
+#about-hover {
+        left: 105px;
+        top: 85px;
+        width: 150px;
+}
+
+#about-hover:after {
+        bottom: -30px;
+        left: 15px;
+        border-width: 0 0 50px 30px;
+        border-color: transparent #ccffff;
+}
+
+
+#links ul {
+        text-align: right;
+}
+
+#links a {
+        width: 65px;
+        height: 65px;
+        color: transparent;
+        margin: 15px 15px 0px;
+        display: inline-block;
+}
+
+
+#links li {
+        display: inline;
+}
+
+#email-link {
+        background-image: url(../img/email.png);
+}
+
+#twitter-link {
+        background-image: url(../img/twitter.png);
+}
+
+#linkedin-link {
+        background-image: url(../img/linkedin.png);
+}
+
+#github-link {
+        background-image: url(../img/github.png);
+}
+
+.circ {
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+}
+
+.circ:hover {
+        background-size: 63px 63px;
+}
+
+@media only screen and (max-width: 1140px) {
+        html {  min-width: 300px; }
+
+        .content-box { width: auto; margin: 25px; }
+
+        #buffer{
+          height: 0;
+        }
+
+        #intro {
+          position: static;
+        }
+
+        #navtwo{
+          position: relative;
+          margin: 0 auto;
+        }
+
+        .nav-button {
+                margin-bottom: 0;
+                padding: 15px 0px;
+                min-width: 75px;
+        }
+
+        #contact-box { position: static; }
+
+        .content-box.article-box { width: auto; }
+
+        .content-box.article-box.subsequent { margin-left: 25px; }
+}
